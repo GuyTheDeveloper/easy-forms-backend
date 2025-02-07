@@ -10,7 +10,7 @@ import CustomError from "./errors/CustomError.js";
 const app = express();
 app.use(
   cors({
-    origin: "*",
+    origin: [FRONTEND_ORIGIN],
     credentials: true,
   })
 );
